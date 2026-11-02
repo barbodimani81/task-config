@@ -10,10 +10,10 @@ replicas:
 images:
   - name: task-app
     newName: ghcr.io/barbodimani81/task-app
-    newTag: 5f7657a
+    newTag: 527fa8b
   - name: task-migrate
     newName: ghcr.io/barbodimani81/task-migrate
-    newTag: 5f7657a
+    newTag: 527fa8b
 configMapGenerator:
   - name: task-config
     behavior: merge
