@@ -1,0 +1,11 @@
+dex:
+  enabled: false        # no SSO; the local admin user is enough here
+notifications:
+  enabled: false
+applicationSet:
+  replicas: 0           # one hand-written Application per environment
+configs:
+  cm:
+    timeout.reconciliation: 60s   # check Git every minute (default 2)
+  params:
+    server.insecure: true         # plain HTTP, reached only via port-forward
