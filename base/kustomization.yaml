@@ -9,4 +9,3 @@ configMapGenerator:
   - name: task-config
     literals:
       - APP_ENV=base
-      - APP_VERSION=292dfa4

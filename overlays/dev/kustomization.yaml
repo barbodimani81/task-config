@@ -9,12 +9,13 @@ replicas:
     count: 1
 images:
   - name: task-app
-    newTag: 13b4764
+    newName: ghcr.io/barbodimani81/task-app
+    newTag: 5f7657a
   - name: task-migrate
-    newTag: 61364d2
+    newName: ghcr.io/barbodimani81/task-migrate
+    newTag: 5f7657a
 configMapGenerator:
   - name: task-config
     behavior: merge
     literals:
       - APP_ENV=dev
-      - APP_VERSION=13b4764
